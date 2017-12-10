@@ -1,0 +1,77 @@
+  .sayfa{background-color: #555;}
+    .menu{float:left;top:0;left:50px;position: absolute;height:40px;}
+    .sosyal{right:0;bottom:-4;position:absolute;}
+    .menubtn{background-color:transparent;border:0;outline:0;height:40px;width:50px;display:none; }
+    .menubtn:hover{background-color:black;filter:invert(100%)}
+    .btn {background:transparent;color:#fff;height:40px;width:160px; border:0;font-weight: bold;font-size:135%;letter-spacing:1px;outline:0;}
+    .btn:hover{background:white;color:black}
+    .kckbtn{filter:invert(100%);width:50px;height:40px;background-color:transparent;color:#fff;border:0;outline:0;background-size:70% 90%;background-repeat:no-repeat;background-position: center; }
+    .kckbtn:hover{background-color:white;filter:invert(0%);}
+    .b1 {margin-left:3px;height:5px;background-color:white;color:white;width:30px;transition: 0.3s;}
+    .b2, .b3 { margin-top:6px;margin-left:3px;       height:5px;background-color:white;color:white;width:30px;transition: 0.3s;}
+    .c .b1 {transform: rotate(-45deg) translate(-8px, 6px);}
+    .c .b2 {opacity: 0;}
+    .c .b3 {transform: rotate(45deg) translate(-9px, -8px) ;}  
+    .buyut{margin:10px;height:300px;width:350px;animation:buyut;animation-duration:0.4s;}
+    .img{margin-left:10%;margin-top:5%;border-radius:100%;vertical-align:middle;text-align: center;}
+    .banner {width:100%;height:40px;background:linear-gradient(to right,#00c6ff,#0072ff);top:0;right:0;position: absolute;box-shadow: 0px 0 10px 0px black;}
+    .arama {top:0;position: absolute;width:250px;z-index: 1;}
+    .cbk {display:none;}
+    .cbac{display:block;animation-name:srchac;animation-duration: 0.5s;border:0;border-radius:10px;outline:0;padding-left:10px;padding-right:10px;font-size:108%;font-weight:bold;height:30px;top:45px;width:200px;left:5px;position: absolute;opacity:1;}
+    .cbkapa{border-radius:10px;outline:0;font-size:108%;font-weight:bold; height:30px;top:45px;width:0;left:5px;position: absolute;animation-name:srchkapa;animation-duration: 0.5s;opacity:0;}
+    .cbkkutu{display:none;}
+    .cbkkutuac{display:block;background:linear-gradient(to right,#00c6ff,#0072ff);height:40px;width:210px;animation-name:kutuac;animation-duration:0.5s;}
+    .cbkkutukapa{background:linear-gradient(to right,#00c6ff,#0072ff);height:40px;width:0;animation-name:kutukapa;animation-duration:0.5s;}
+    @keyframes btnac{from{height:0;opacity:0;}to{height:55px;opacity:1;}}
+    @keyframes btnkapa{from{height:55px;opacity:1;}to{height:0;opacity:0;}}
+    @keyframes srchac{from{width:0;opacity:0;}to{width:200px;opacity:1;}}
+    @keyframes srchkapa{from{width:200px;opacity:1;}to{width:0;opacity:0;}}
+    @keyframes kutuac{from{width:0;opacity:0;}to{width:210px;opacity:1;}}       
+    @keyframes kutukapa{from{width:210px;opacity:1;}to{width:0;opacity:0;}}
+    .content{clear:both;position:relative;top:60px;height:500px;;width:100%;}  
+    .icerik{position:absolute;left:0;padding-bottom:50px;margin-bottom:25px;margin-left:1%;width:70%;background-color:#e5e5e5;box-shadow: 0px 0 10px 0px black;border-radius:0.4%;}
+    .ekmenu{position:absolute;right:0;margin-right:1%;width:26%;height:600px;background-color:#e5e5e5;box-shadow: 0px 0 10px 0px black;border-radius:1%;padding-top:20px;}
+    .ekbtn{font-weight:bolder;font-size:120%;background:transparent;margin-top:10px;margin-left:5%;border-radius:2%;box-shadow: 0px 0 7px 0px black;width:90%;height:70px;text-decoration: 0;outline:0;border:0;}
+    .ekbtn:hover{background:linear-gradient(to right,#00a0ff,#0072ff);color:white;}
+    .entry{height:450px;width:100%;}
+    .header {margin-left:10%;margin-top:40px;color:#333;}
+    .entryimg{background-size: cover;float:left;width:250px;height:350px;margin-left:10%;margin-top:20px;box-shadow: 0px 0 7px 5px #777;border-radius:2%;}
+    .entryinfo{float:left;margin-left:20px;font-size:120%;margin-top:80px;}
+    @media only screen and (max-width:970px){
+    .icerik{width:98%;}
+    .ekmenu{display: none;}
+    }
+    @media only screen and (max-width:890px){
+    .sosyal{display:none;}
+    }
+    @media only screen and (max-width:720px){
+    .ekmenu{display:none;}
+    .icerik{width:100%;margin:0;padding:0;}
+    .content{top:50px;}
+    .header{font-size:160%;}
+    .entryimg{height:300px;width:200px;}
+    .cbac{margin-left:-60px;display:block;border:0;border-radius:10px;outline:0;padding-left:10px;padding-right:10px;font-size:108%;font-weight:bold;height:30px;top:45px;width:200px;left:65px;position:absolute;opacity:1;animation-name:srchac;animation-duration: 0.5s;}   
+    .cbkapa{ border-radius:10px;outline:0;;font-size:108%;font-weight:bold;height:30px;top:45px;width:0;left:65px;position: absolute;animation-name:srchkapa;animation-duration: 0.5s;opacity:0;}
+    .cbkkutuac{display:block;height:40px;width:210px;background:linear-gradient(to right,#00c6ff,#0072ff);animation-name:kutuac;animation-duration:0.5s;}
+    .cbkkutukapa{height:40px;width:0;background:linear-gradient(to right,#00c6ff,#0072ff);animation-name:kutukapa;animation-duration:0.5s;}
+    .menu{display:none;left:0;position:relative;height:220px;width:100%;z-index:1;}
+    .sosyal{display:none;}
+    .btn{display:none;}
+    .btnac{display:block;background:linear-gradient(to right,#00c6ff,#0072ff);height:55px;width:100%;border-bottom:1px solid black;border-top:1px solid black;animation-name:btnac;animation-duration:0.5s}
+    .btnkapa{background:linear-gradient(to right,#00c6ff,#0072ff);height:0px;width:100%;border-bottom:1px solid black;border-top:1px solid black;animation-name:btnkapa;animation-duration:0.5s}
+    .arama{z-index:1;margin-left:50px;}.banner{height:40px;}
+    .menubtn{display:block;float:left;}}
+    @media only screen and (max-width:600px){
+        .icerik{margin-bottom:12px;}
+        .entry{height:800px;}
+        .header{text-align:center;margin-right:10%;}
+        .entryimg{width:65%;height:50%;background-size:cover;margin-left:17.5%;}
+        .entryinfo{margin-top:10px;text-align:center;font-size:120%;clear:both;width:50%;margin-left:25%;}
+    }
+    @media only screen and (max-width:380px){
+        .entryimg{
+            width:90%;margin-left:5%;height:400px;
+        }
+
+    }
+    .goster{display:block};
